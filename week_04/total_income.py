@@ -11,7 +11,7 @@ def main():
     for month in range(1, month_number + 1):
         income = float(input("Enter income for month {}: ".format(month_number)))
         incomes.append(income)
-    print_report(incomes)  #problem
+    print_report(incomes)
 
 
 def print_report(running_income):
