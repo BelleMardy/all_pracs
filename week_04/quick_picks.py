@@ -19,7 +19,7 @@ def main():
 
     for i in range(number_of_quick_picks):
         quick_pick = []
-        for j in range(NUMBERS_PER_LINE):
+        for bunny in range(NUMBERS_PER_LINE):
             number = random.randint(MINIMUM, MAXIMUM)
             while number in quick_pick:
                 number = random.randint(MINIMUM, MAXIMUM)
@@ -28,7 +28,7 @@ def main():
         # the following uses a generator expression (like a list comprehension)
         # to format each number in quick_pick in the same way
         # this is then turned into a single string with the join method
-        print(" ".join("{:2}".format(number) for number in quick_pick))
+        print("{} ".join("{:2}".format(number) for number in quick_pick))
 
 
 main()
