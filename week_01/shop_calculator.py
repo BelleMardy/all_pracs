@@ -32,5 +32,7 @@ if total_saless > DISCOUNT_ON_SALES_OVER:
     total_saless -= APPLIED_DISCOUNT
 
 
-print("Total items {}, total sales ${:.2f}, including the discount of ${:.2f}.".format(number_of_items, total_saless,
-                                                                                       APPLIED_DISCOUNT))
+print("Total items {}, total sales ${:.2f}, with discount of ${:.2f}. Amount payable ${:.2f}.".format(number_of_items,
+                                                                                                      (total_saless +
+                                                                                        APPLIED_DISCOUNT),
+                                                                                       APPLIED_DISCOUNT, total_saless))

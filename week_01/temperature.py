@@ -16,14 +16,15 @@ def main():
     while choice != "Q":
         if choice == "C":
             celsius = float(input("Celsius: "))
-            fahrenheit = celsius * 9.0 / 5 + 32
+            fahrenheit_converted = fahrenheit(from_celsius)
             print("_" * 90)
-            print("Result Celsius to Fahrenheit: {:.2f} F".format(fahrenheit))
+            print("Result Celsius to Fahrenheit: {:.2f} F".format(fahrenheit_converted))
             print()
         elif choice == "F":  # Done - Write this section to convert F to C and display the result
             fahrenheit = float(input("Fahrenheit: "))
+            celsius_converted = celsius(from_fahrenheit)
             print("_" * 90)
-            print("Result Fahrenheit to Celsius: {:.2f} C".format(celsius))
+            print("Result Fahrenheit to Celsius: {:.2f} C".format(celsius_converted))
             print()
             # Done - Remove the "pass" statement when you are done. It's a placeholder.
         else:
@@ -33,12 +34,12 @@ def main():
     print("Thank you.")
 
 
-def celsius():
-    celsius = 5 / 9 * (fahrenheit - 32)
+def celsius(from_fahrenheit):
+    celsius = 5 / 9 * (from_fahrenheit - 32)
     return celsius
 
-def fahrenheit():
-    fahrenheit = celsius * 9.0 / 5 + 32
+def fahrenheit(from_celsius):
+    fahrenheit = from_celsius * 9.0 / 5 + 32
     return fahrenheit
 
 main()
