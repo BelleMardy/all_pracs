@@ -8,12 +8,13 @@ def main():
     print(("Car fuel and odometer").upper())
     current_fuel_car = int(input("Current fuel car: >>> "))
     my_car = Car("My car", current_fuel_car) #  Pascal shows that this is class "Car"
-    current_odometer_car = int(input("Current odometer limo: >>> "))
+    current_odometer_car = int(input("Current odometer car: >>> "))
     my_car.drive(current_odometer_car) #  drive is part of the Car class
     print("Car Fuel: {} ".format(my_car.fuel))
     print("Car Odometer: {} ".format(my_car.odometer))
     print("{}".format(my_car))
     print()
+    print("-" * 20)
     print()
     print(("Limo fuel and odometer").upper())
     current_fuel_limo = int(input("Current fuel limo: >>> "))
