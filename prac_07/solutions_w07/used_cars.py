@@ -1,7 +1,7 @@
 """CP1404/CP5632 Practical - Client code to use the Car class."""
 # Note that the import has a folder (module) in it.
 
-from prac_07.car import Car
+from prac_07.solutions_w07.cars import Car
 
 
 def main():
